@@ -5,167 +5,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI-SIRF 2026 | International Conference</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            font-family: "Poppins", sans-serif;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0)),
-                url('images/06838.jpg') center/cover no-repeat;
-            color: white;
-            text-align: center;
-            padding: 120px 20px;
-            height: 800px;
-        }
-
-        .hero h1 {
-            font-size: 2.8rem;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-        }
-
-        .track-card {
-            border-left: 5px solid #0d6efd;
-        }
-
-        .track-card h5 {
-            font-weight: 600;
-        }
-
-        .nav-item.disabled .nav-link {
-            color: #ccc !important;
-            cursor: not-allowed;
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold text-primary" href="#">AI-SIRF 2026</a>
+            <a class="navbar-brand" href="#">AI-SIRF 2026</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#tracks">Tracks</a></li>
-                    <li class="nav-item disabled"><a class="nav-link">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tracks">Tracks</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Speakers</a></li>
                     <li class="nav-item"><a class="nav-link" href="committee.html">Committees</a></li>
-                    <li class="nav-item disabled"><a class="nav-link">Registration</a></li>
-                    <li class="nav-item disabled"><a class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Registration</a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero-section">
         <div class="container">
             <h3>International Conference on</h3>
-            <h1>AI for Sustainable, Inclusive & Responsible Futures</h1>
-            <h1 class="mt-3">(AI-SIRF 2026)</h1>
-            <p class="mt-4">8 – 10 October 2026 | CHRIST (Deemed to be University), Pune Lavasa Campus |
-                Multidisciplinary Innovation</p>
+            <h1>AI for Sustainable, Inclusive & Responsible Futures (AI-SIRF 2026)</h1>
+            <p class="lead mb-4">
+                8 – 10 October 2026 <br />
+                CHRIST (Deemed to be University), Pune Lavasa Campus.
+            </p>
+            <div class="mt-5">
+                <a href="https://cmt3.research.microsoft.com/AISIRF2026" target="_blank"
+                    class="btn btn-primary btn-lg rounded-pill px-4 py-2 fw-semibold">Submit Your Paper</a>
+            </div>
         </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="py-5">
+    <section class="section-padding">
         <div class="container text-center">
-            <h2 class="fw-bold mb-4">About the Conference</h2>
-            <p class="lead">
-                AI-SIRF 2026 brings together global researchers, industry experts, and academicians to
-                explore the transformative role of Artificial Intelligence in building a sustainable, inclusive, and
-                responsible future.
-                The conference emphasizes multidisciplinary innovation that drives ethical AI adoption, environmental
-                resilience, and social empowerment through technology.
-            </p>
+            <h2 class="section-title">About the Conference</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <p class="lead text-secondary">
+                        AI-SIRF 2026 brings together global researchers, industry experts, and academicians to
+                        explore the transformative role of Artificial Intelligence in building a sustainable, inclusive,
+                        and
+                        responsible future.
+                        The conference emphasizes multidisciplinary innovation that drives ethical AI adoption,
+                        environmental
+                        resilience, and social empowerment through technology.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- TRACKS -->
-    <section class="bg-light py-5" id="tracks">
+    <section class="bg-light section-padding" id="tracks">
         <div class="container">
-            <h2 class="fw-bold text-center mb-5">Conference Tracks</h2>
+            <h2 class="section-title">Conference Tracks</h2>
 
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card track-card p-3 h-100">
+            <div class="row g-4 d-flex align-items-stretch">
+                <div class="col-md-4 d-flex">
+                    <div class="track-card w-100">
                         <h5>Track 1: Sustainable and Accessible AI Systems</h5>
-                        <p>
-                            <strong>Chair:</strong> Dr. Savithri M <br />
-                            <strong>Email:</strong> <a
-                                href="mailto:savithri.m@christuniversity.in">savithri.m@christuniversity.in</a>
+                        <p class="mb-3">
+                            <span class="fw-semibold text-dark">Chair:</span> Dr. Savithri M <br />
+                            <a href="mailto:savithri.m@christuniversity.in"
+                                class="text-sm">savithri.m@christuniversity.in</a>
                         </p>
-                        <p>
+                        <p class="small text-secondary mb-4">
                             Exploring AI innovations that drive environmental sustainability, accessibility, and
                             equitable technological growth.
                         </p>
-                        <ul>
-                            <li>Green and energy-efficient AI systems</li>
-                            <li>AI for climate action, smart cities, and renewable energy</li>
-                            <li>Sustainable agriculture and water resource management</li>
-                            <li>Assistive technologies for differently-abled and aging populations</li>
-                            <li>AI for accessible education, healthcare, and governance</li>
-                            <li>Digital inclusion and bridging global technological divides</li>
-                            <li>Smart infrastructure and resource optimization</li>
-                            <li>AI for Cattle And Meat Richness and Freshness for Food Safety</li>
+                        <ul class="list-unstyled">
+                            <li>• Green and energy-efficient AI systems</li>
+                            <li>• AI for climate action & smart cities</li>
+                            <li>• Sustainable agriculture resource management</li>
+                            <li>• Assistive technologies for differently-abled</li>
+                            <li>• AI for accessible education & healthcare</li>
+                            <li>• Digital inclusion & bridging divides</li>
+                            <li>• Smart infrastructure optimization</li>
+                            <li>• AI for Food Safety</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card track-card p-3 h-100">
+                <div class="col-md-4 d-flex">
+                    <div class="track-card w-100">
                         <h5>Track 2: Responsible, Safe & Ethical AI</h5>
-                        <p>
-                            <strong>Chair:</strong> Dr. Lekha J<br />
-                            <strong>Email:</strong> <a
-                                href="mailto:lekha.j@christuniversity.in">lekha.j@christuniversity.in</a>
+                        <p class="mb-3">
+                            <span class="fw-semibold text-dark">Chair:</span> Dr. Lekha J<br />
+                            <a href="mailto:lekha.j@christuniversity.in" class="text-sm">lekha.j@christuniversity.in</a>
                         </p>
-                        <p>
+                        <p class="small text-secondary mb-4">
                             Fostering trust, accountability, and resilience in AI development and deployment,
                             responsible and explainable AI (XAI) frameworks
                         </p>
-                        <ul>
-                            <li>Algorithmic fairness, transparency, and bias mitigation</li>
-                            <li>Data ethics, privacy, and cybersecurity</li>
-                            <li>AI policy, governance, and regulation</li>
-                            <li>AI safety in autonomous systems, robotics, and industry</li>
-                            <li>AI for disaster management, crisis response, and resilience</li>
-                            <li>Ethical implications of generative and decision-making AI</li>
-                            <li>AI for Political Science and Democratic Citizen Responsibility Challenges</li>
-                            <li>AI for cyber connected cars and drones</li>
+                        <ul class="list-unstyled">
+                            <li>• Algorithmic fairness & transparency</li>
+                            <li>• Data ethics, privacy, and cybersecurity</li>
+                            <li>• AI policy, governance, and regulation</li>
+                            <li>• AI safety in autonomous systems</li>
+                            <li>• AI for disaster management & crisis response</li>
+                            <li>• Ethical implications of generative AI</li>
+                            <li>• AI for Political Science Challenges</li>
+                            <li>• AI for cyber connected cars and drones</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <div class="card track-card p-3 h-100">
+                <div class="col-md-4 d-flex">
+                    <div class="track-card w-100">
                         <h5>Track 3: Inclusive AI for Social & Economic Impact</h5>
-                        <p>
-                            <strong>Chair:</strong> Dr. Gunavathi R <br />
-                            <strong>Email:</strong> <a
-                                href="mailto:gunavathi.r@christuniversity.in">gunavathi.r@christuniversity.in</a>
+                        <p class="mb-3">
+                            <span class="fw-semibold text-dark">Chair:</span> Dr. Gunavathi R <br />
+                            <a href="mailto:gunavathi.r@christuniversity.in"
+                                class="text-sm">gunavathi.r@christuniversity.in</a>
                         </p>
-                        <p>
+                        <p class="small text-secondary mb-4">
                             Advancing inclusive innovation that empowers communities and promotes equitable growth.
                         </p>
-                        <ul>
-                            <li>AI for gender equality, diversity, and empowerment</li>
-                            <li>AI-driven social innovation and public welfare systems</li>
-                            <li>Inclusive economic growth and entrepreneurship through AI</li>
-                            <li>AI applications in education, healthcare, and social development</li>
-                            <li>Culturally adaptive and multilingual AI systems</li>
-                            <li>Human-centered AI and participatory design</li>
-                            <li>AI for governance, democracy, and civic engagement</li>
+                        <ul class="list-unstyled">
+                            <li>• AI for gender equality & empowerment</li>
+                            <li>• AI-driven social innovation</li>
+                            <li>• Inclusive economic growth through AI</li>
+                            <li>• AI in education & social development</li>
+                            <li>• Culturally adaptive multilingual systems</li>
+                            <li>• Human-centered AI & participatory design</li>
+                            <li>• AI for governance & civic engagement</li>
                         </ul>
                     </div>
                 </div>
@@ -174,74 +156,84 @@
     </section>
 
     <!-- IMPORTANT DATES -->
-    <section class="py-5">
+    <section class="section-padding">
         <div class="container">
-            <h2 class="fw-bold text-center mb-4">Important Dates</h2>
-            <div class="table-responsive">
-                <table class="table table-bordered table-hover text-center align-middle">
-                    <thead class="table-primary">
-                        <tr>
-                            <th>Event</th>
-                            <th>Date</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Paper Submission Deadline</td>
-                            <td>30 April 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Acceptance Notification</td>
-                            <td>15 June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Early Bird Registration</td>
-                            <td>30 June 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Final Registration Deadline</td>
-                            <td>30 July 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Camera-Ready Paper Submission</td>
-                            <td>30 August 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Pre-Conference Tutorial</td>
-                            <td>6 October 2026</td>
-                        </tr>
-                        <tr>
-                            <td>Conference Dates</td>
-                            <td>8 – 10 October 2026</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <h2 class="section-title">Important Dates</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="table-responsive">
+                            <table class="table custom-table table-hover mb-0 text-center">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3">Event</th>
+                                        <th class="py-3">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Paper Submission Deadline</td>
+                                        <td class="fw-semibold text-primary">30 April 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Acceptance Notification</td>
+                                        <td>15 June 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Early Bird Registration</td>
+                                        <td>30 June 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Final Registration Deadline</td>
+                                        <td>30 July 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Camera-Ready Paper Submission</td>
+                                        <td>30 August 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pre-Conference Tutorial</td>
+                                        <td>6 October 2026</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Conference Dates</td>
+                                        <td class="fw-bold text-primary">8 – 10 October 2026</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-light">
-        <div class="text-center p-5">
-            The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
-            <br />
-            This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud
-            services as
-            well as for software development and support.
+    <!-- MICROSOFT SECTION -->
+    <section class="microsoft-section">
+        <div class="container text-center py-5">
+            <p class="text-secondary mb-0">
+                The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+                <br />
+                This service was provided for free by Microsoft and they bore all expenses, including costs for Azure
+                cloud
+                services as well as for software development and support.
+            </p>
         </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="p-5 text-center" style="border-top: 0.5px solid black;">
-            Designed, Developed & Maintained by <br />
-            <a class="text-dark mt-3" href="http://christinfotech.org/" target="_blank"><span class="fw-bold">CHRIST
-                    Infotech</span></a>
-            <span class="fst-italic">
+        <div class="container py-4 text-center">
+            <p class="mb-2">Designed, Developed & Maintained by</p>
+            <a href="http://christinfotech.org/" target="_blank" class="text-decoration-none d-block mb-1">
+                <span class="fw-bold">CHRIST Infotech</span>
+            </a>
+            <p class="small text-muted mb-0">
                 (Software Research & Development Center),
-                <a href="https://lavasa.christuniversity.in/" class="text-dark" target="_blank">CHRIST University</a>,
-                Pune
-                - Lavasa, India
-            </span>
+                <a href="https://lavasa.christuniversity.in/" target="_blank"
+                    class="text-muted text-decoration-underline">CHRIST University</a>,
+                Pune - Lavasa, India
+            </p>
         </div>
     </footer>
 
